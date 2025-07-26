@@ -2141,18 +2141,46 @@ section {
     }
 }
 
-/* For the rounded button */
+/* For the rounded button (keep this as is) */
 .rounded-button {
     border-radius: 50px; /* Adjust as needed for desired roundness */
     padding: 10px 30px; /* Adjust padding for better button size */
 }
 
-
-/* For spacing out the grey background section */
-.rena-corp-info-section {
-    background-color: #f8f9fa; /* Or your desired shade of grey */
-    padding: 30px 50px; /* Increased padding for left and right */
+/* Styles for the main content wrapper (this is where the full grey background and border should go) */
+.about-content-wrapper {
+    background-color: #f8f9fa; /* Apply the grey background here */
+    padding: 50px; /* Adjust padding for inside the grey box */
     margin-top: 40px; /* Add margin above the section */
     margin-bottom: 40px; /* Add margin below the section */
     border-radius: 10px; /* Optional: adds slight roundness to the grey box */
+    border: 1px solid #ADD8E6; /* Added a 1px solid light blue border here */
+}
+
+/* Remove background and border from .rena-corp-info-section if they are now on .about-content-wrapper */
+/* Keep margin-top/bottom and padding if you still want additional spacing around Strengths/Pricing within the larger grey box */
+.rena-corp-info-section {
+    /* You might want to adjust or remove these if the main wrapper handles all spacing/background */
+    /* For example, if you want more space just around the strengths/pricing, keep some padding/margin */
+    padding-top: 30px; /* Adjust if needed */
+    padding-bottom: 30px; /* Adjust if needed */
+    margin-top: 30px; /* Add some top margin to separate from content above */
+    margin-bottom: 30px; /* Add some bottom margin to separate from content below */
+    /* Removed: background-color, border, border-radius as they are now on .about-content-wrapper */
+}
+
+/* Update your existing CSS for the list items */
+ul li {
+    position: relative; /* Essential for positioning the icon */
+    padding-left: 30px; /* Space for the icon and a little gap */
+    margin-bottom: 10px; /* Keep existing spacing between list items */
+    text-align: left; /* Ensure text alignment starts from the left */
+}
+
+ul li .bi-check-circle {
+    position: absolute; /* Position the icon independently */
+    left: 0; /* Align the icon to the very left of the list item's padded area */
+    top: 0; /* Align to the top of the text line */
+    color: #007bff; /* Optional: Make the check icon blue for visibility/branding */
+    font-size: 1em; /* Adjust size if needed, 'em' relative to parent text */
 }

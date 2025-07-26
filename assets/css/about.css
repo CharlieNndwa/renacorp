@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Sansita+Swashed&display=swap');
+
 
 
 
@@ -38,7 +38,7 @@ h1{
     margin-bottom: 10px;
 }
 h2{
-    font-family: 'Sansita Swashed', cursive; 
+    /* font-family: 'Sansita Swashed', cursive;  */
     text-align: center;
     margin-top: 40px;
 
