@@ -1833,24 +1833,21 @@ section {
 /* You can remove or adjust the previous .logo img rule if this new class is now handling the sizing */
 
 .logo img {
-    max-height: 120px;
-    width: auto;
+    max-height: 50px; /* Increased from 120px to 150px - adjust this value as desired */
+    width: auto;     /* Maintains the aspect ratio */
     vertical-align: middle;
 }
 
-
 /* If you have existing styles for .logo or .logo a, you might need to adjust them */
-/* For example, if .logo had a background-color, you might not need it anymore */
 .logo {
-    /* Remove any background-color or text-related styles if they were applied directly to .logo */
-    /* text-indent: -9999px; */ /* If you used text-indent to hide the old text, remove it */
+    /* Ensure no conflicting styles are here */
 }
 
 .logo a {
-    /* Ensure the anchor link behaves as a block or inline-block to contain the image properly */
     display: inline-block;
-    line-height: 1; /* Helps with vertical alignment */
+    line-height: 1;
 }
+
 .blue-corp {
     color: #52fcfc; /* This is the exact hex code for the standard 'cyan' */
 }
@@ -2387,4 +2384,14 @@ ul li .bi-check-circle {
         bottom: 80px; /* Slightly less space on mobile if desired */
         right: 15px;
     }
+}
+
+/* Styling for the logo container in the footer */
+
+
+/* Styling for the logo image itself within the footer */
+.footer-logo-containerz img {
+    max-height: 58px; /* Adjust height to match the size in your screenshot */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it renders as a block for proper margin handling */
 }
